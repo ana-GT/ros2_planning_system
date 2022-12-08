@@ -35,7 +35,7 @@ public:
   BtActionNode(
     const std::string & xml_tag_name,
     const std::string & action_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : BT::ActionNodeBase(xml_tag_name, conf), action_name_(action_name)
   {
     node_ = rclcpp::Node::make_shared(action_name_ + "bta");

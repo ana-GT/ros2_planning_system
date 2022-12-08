@@ -440,7 +440,7 @@ class ExecuteActionTest : public plansys2::ExecuteAction
 public:
   ExecuteActionTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : ExecuteAction(xml_tag_name, conf) {}
 
   void halt() override
@@ -465,7 +465,7 @@ class WaitActionTest : public plansys2::WaitAction
 public:
   WaitActionTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : WaitAction(xml_tag_name, conf) {}
 
   void halt() override
@@ -489,7 +489,7 @@ class CheckOverAllReqTest : public plansys2::CheckOverAllReq
 public:
   CheckOverAllReqTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : CheckOverAllReq(xml_tag_name, conf) {}
 
   void halt() override
@@ -513,7 +513,7 @@ class WaitAtStartReqTest : public plansys2::WaitAtStartReq
 public:
   WaitAtStartReqTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : WaitAtStartReq(xml_tag_name, conf) {}
 
   void halt() override
@@ -537,7 +537,7 @@ class CheckAtEndReqTest : public plansys2::CheckAtEndReq
 public:
   CheckAtEndReqTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : CheckAtEndReq(xml_tag_name, conf) {}
 
   void halt() override
@@ -561,7 +561,7 @@ class ApplyAtStartEffectTest : public plansys2::ApplyAtStartEffect
 public:
   ApplyAtStartEffectTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : ApplyAtStartEffect(xml_tag_name, conf) {}
 
   void halt() override
@@ -585,7 +585,7 @@ class ApplyAtEndEffectTest : public plansys2::ApplyAtEndEffect
 public:
   ApplyAtEndEffectTest(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf)
+    const BT::NodeConfig & conf)
   : ApplyAtEndEffect(xml_tag_name, conf) {}
 
   void halt() override

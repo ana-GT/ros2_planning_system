@@ -155,7 +155,7 @@ TEST(bt_actions, on_tick_failure)
     });
 
 
-  BT::NodeConfiguration config;
+  BT::NodeConfig config;
   BT::assignDefaultRemapping<plansys2_bt_tests::OnTickFail>(config);
   auto bb = BT::Blackboard::create();
   bb->set("node", node);
@@ -191,7 +191,7 @@ TEST(bt_actions, on_feedback_failure)
       while (!finished) {rclcpp::spin_some(move_server_node);}
     });
 
-  BT::NodeConfiguration config;
+  BT::NodeConfig config;
   BT::assignDefaultRemapping<plansys2_bt_tests::OnFeedbackFail>(config);
   auto bb = BT::Blackboard::create();
   bb->set("node", node);

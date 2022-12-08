@@ -35,7 +35,7 @@ class CheckOverAllReq : public BT::ActionNodeBase
 public:
   CheckOverAllReq(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf);
+    const BT::NodeConfig & conf);
 
   void halt() {}
   BT::NodeStatus tick() override;

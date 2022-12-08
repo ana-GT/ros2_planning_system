@@ -35,7 +35,7 @@ class WaitAtStartReq : public BT::ActionNodeBase
 public:
   WaitAtStartReq(
     const std::string & xml_tag_name,
-    const BT::NodeConfiguration & conf);
+    const BT::NodeConfig & conf);
 
   void halt() {}
   BT::NodeStatus tick() override;
