@@ -18,7 +18,7 @@ find_package(plansys2_domain_expert REQUIRED)
 find_package(plansys2_problem_expert REQUIRED)
 find_package(plansys2_planner REQUIRED)
 find_package(pluginlib REQUIRED)
-find_package(behaviortree_cpp_v3 REQUIRED)
+find_package(behaviortree_cpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 
@@ -46,7 +46,7 @@ set(dependencies
     plansys2_problem_expert
     plansys2_planner
     pluginlib
-    behaviortree_cpp_v3
+    behaviortree_cpp
     std_msgs
     std_srvs
 )
