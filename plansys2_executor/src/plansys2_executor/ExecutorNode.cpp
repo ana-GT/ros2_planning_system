@@ -482,7 +482,7 @@ ExecutorNode::execute(const std::shared_ptr<GoalHandleExecutePlan> goal_handle)
 
   while (status == BT::NodeStatus::RUNNING && !cancel_plan_requested_) {
     try {
-      status = tree.tickRoot();
+      status = tree.tickOnce();
     } catch (std::exception & e) {
       std::cerr << e.what() << std::endl;
       status == BT::NodeStatus::FAILURE;

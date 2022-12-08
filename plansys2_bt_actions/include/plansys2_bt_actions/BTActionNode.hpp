@@ -228,7 +228,7 @@ public:
       cancel_goal();
     }
 
-    setStatus(BT::NodeStatus::IDLE);
+    resetStatus();
   }
 
 protected:
